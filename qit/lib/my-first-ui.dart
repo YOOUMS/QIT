@@ -39,7 +39,7 @@ class myFirstUI extends StatelessWidget {
                   border: Border.all(color: Color.fromARGB(255, 0, 56, 102))),
               child: Column(children: [
                 Row(
-                  children: [
+                  children: const [
                     Text(
                       "USER NAME :",
                       style: TextStyle(
@@ -60,7 +60,7 @@ class myFirstUI extends StatelessWidget {
                   height: 20,
                 ),
                 Row(
-                  children: [
+                  children: const [
                     Text(
                       "USER'S SONGS :",
                       style: TextStyle(

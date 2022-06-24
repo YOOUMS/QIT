@@ -10,11 +10,9 @@ class AddSong extends StatelessWidget {
   final double hieght = 40;
 
   Widget build(BuildContext context) {
-    // TODO: implement build
-
     return Scaffold(
       appBar: AppBar(
-        title: Text("Add Song"),
+        title: const Text("Add Song"),
         centerTitle: true,
       ),
       body: Center(
@@ -25,40 +23,42 @@ class AddSong extends StatelessWidget {
             height: 200,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
-                color: Color.fromARGB(255, 68, 162, 240),
-                border: Border.all(color: Color.fromARGB(255, 0, 56, 102))),
+                color: const Color.fromARGB(255, 68, 162, 240),
+                border:
+                    Border.all(color: const Color.fromARGB(255, 0, 56, 102))),
             child:
                 Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-              Text("Add Song",
+              const Text("Add Song",
                   style: TextStyle(
                       fontSize: 30,
                       color: Colors.white,
                       fontWeight: FontWeight.w900)),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   SizedBox(
                     width: width,
                     height: hieght,
                     child: TextField(
+                      // ignore: unnecessary_new
                       decoration: new InputDecoration(
                           hintText: "Enter Song Name",
                           filled: true,
                           fillColor: Colors.white,
-                          border: new OutlineInputBorder(
+                          border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10),
-                              borderSide: new BorderSide(color: Colors.blue))),
+                              borderSide: BorderSide(color: Colors.blue))),
                     ),
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Row(
@@ -68,31 +68,32 @@ class AddSong extends StatelessWidget {
                       height: hieght,
                       width: width,
                       child: TextField(
-                        decoration: new InputDecoration(
+                        decoration: InputDecoration(
                             hintText: 'Your name',
                             filled: true,
                             fillColor: Colors.white,
-                            border: new OutlineInputBorder(
+                            border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(10),
                                 borderSide:
-                                    new BorderSide(color: Colors.blue))),
+                                    const BorderSide(color: Colors.blue))),
                       ))
                 ],
               ),
             ]),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
           SizedBox(
             width: 100,
             child: TextButton(
               onPressed: null,
-              child: Text("Add Song"),
+              // ignore: sort_child_properties_last
+              child: const Text("Add Song"),
               style: ButtonStyle(
                   foregroundColor: MaterialStateProperty.all(Colors.white),
                   backgroundColor: MaterialStateProperty.all(
-                      Color.fromARGB(255, 68, 162, 240))),
+                      const Color.fromARGB(255, 68, 162, 240))),
             ),
           )
         ]),
