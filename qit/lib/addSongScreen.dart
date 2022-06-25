@@ -46,6 +46,7 @@ class AddSong extends StatelessWidget {
                     width: width,
                     height: hieght,
                     child: TextField(
+                      textAlign: TextAlign.center,
                       // ignore: unnecessary_new
                       decoration: new InputDecoration(
                           hintText: "Enter Song Name",
@@ -68,6 +69,7 @@ class AddSong extends StatelessWidget {
                       height: hieght,
                       width: width,
                       child: TextField(
+                        textAlign: TextAlign.center,
                         decoration: InputDecoration(
                             hintText: 'Your name',
                             filled: true,
