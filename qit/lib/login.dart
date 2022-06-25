@@ -9,6 +9,14 @@ class login extends StatelessWidget {
     return Scaffold(
         body: Center(
       child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+        Image.asset(
+          "assets/mainIcon.png",
+          width: 200,
+          height: 200,
+        ),
+        SizedBox(
+          height: 40,
+        ),
         Container(
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
