@@ -62,6 +62,19 @@ flutter:
   - assets/lol.jpg
   - assets/lol2.jpg
   - assets/mainIcon.png
+  - assets/insIcons/like.png
+  - assets/insIcons/user.png
+  - assets/insIcons/user2.png
+  - assets/insIcons/check.png
+  - assets/insIcons/user_icon.png
+
+  - assets/insIcons/save.png
+  - assets/insIcons/chat.png
+  - assets/insIcons/send.png
+  - assets/insIcons/home.png
+  - assets/insIcons/search.png
+  - assets/insIcons/plus.png
+
     # - images/a_dot_burr.jpeg
     # - images/a_dot_ham.jpeg
     
