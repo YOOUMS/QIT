@@ -8,5 +8,5 @@ import 'package:qit/my-first-ui.dart';
 import 'package:qit/signupScreen.dart';
 
 void main() {
-  runApp(MaterialApp(home: facebookUI2()));
+  runApp(MaterialApp(home: facebookUI()));
 }

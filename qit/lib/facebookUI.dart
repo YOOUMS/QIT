@@ -6,6 +6,17 @@ class facebookUI extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: Container(
+        margin: EdgeInsets.only(bottom: 60),
+        child: FloatingActionButton(
+          backgroundColor: Color.fromARGB(255, 35, 79, 145),
+          child: Text(
+            "+",
+            style: TextStyle(fontSize: 30),
+          ),
+          onPressed: null,
+        ),
+      ),
       body: Container(
           padding: EdgeInsets.only(top: 20),
           child: Column(
@@ -451,7 +462,76 @@ class facebookUI extends StatelessWidget {
                     ],
                   )
                 ]),
-              )
+              ),
+              Container(
+                // margin: EdgeInsets.only(top: 100),
+                padding: EdgeInsets.only(top: 10),
+                decoration: BoxDecoration(
+                    border: Border(
+                        top: BorderSide(
+                            color: Color.fromARGB(255, 170, 168, 168)))),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      // alignment: Alignment.bottomLeft,
+                      width: 30,
+                      height: 30,
+                      // margin: EdgeInsets.only(left: 40),
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                              image:
+                                  AssetImage("assets/facebookIcons/feed.png"))),
+                    ),
+                    Container(
+                      // alignment: Alignment.bottomLeft,
+                      width: 30,
+                      height: 30,
+                      margin: EdgeInsets.only(left: 40),
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                              image: AssetImage(
+                                  "assets/facebookIcons/users.png"))),
+                    ),
+                    Container(
+                      // alignment: Alignment.bottomLeft,
+                      width: 30,
+                      height: 30,
+                      margin: EdgeInsets.only(left: 40),
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                              image: AssetImage(
+                                  "assets/facebookIcons/video.png"))),
+                    ),
+                    Container(
+                      // alignment: Alignment.center,
+                      width: 30,
+                      height: 30,
+                      margin: EdgeInsets.only(left: 40),
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                              image:
+                                  AssetImage("assets/facebookIcons/bell.png"))),
+                    ),
+                    Container(
+                      margin: EdgeInsets.only(
+                        right: 5,
+                        left: 40,
+                        top: 5,
+                        bottom: 5,
+                      ),
+                      width: 25,
+                      height: 25,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(100),
+                          image: DecorationImage(
+                              image:
+                                  AssetImage("assets/facebookIcons/user.png"),
+                              fit: BoxFit.cover)),
+                    ),
+                  ],
+                ),
+              ),
             ],
           )),
     );

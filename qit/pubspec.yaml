@@ -90,6 +90,13 @@ flutter:
   - assets/facebookIcons/like2.png
   - assets/facebookIcons/plus.png
   - assets/facebookIcons/back.png
+  - assets/facebookIcons/smile.png
+  - assets/facebookIcons/bell.png
+  - assets/facebookIcons/feed.png
+  - assets/facebookIcons/users.png
+  - assets/facebookIcons/video.png
+  
+
 
 
     # - images/a_dot_burr.jpeg
